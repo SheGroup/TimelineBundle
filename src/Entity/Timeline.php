@@ -26,6 +26,7 @@ class Timeline
 
     /** @var Collection<int, TimelineItem>  */
     #[ORM\ManyToMany(targetEntity: TimelineItem::class, mappedBy: 'timelines', cascade: ['persist'])]
+    #[ORM\OrderBy(['date' => 'DESC'])]
     private Collection $timelineItems;
 
     public function __construct()
