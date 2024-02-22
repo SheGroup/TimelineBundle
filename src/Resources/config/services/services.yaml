@@ -1,0 +1,7 @@
+services:
+  Damecode\TimelineBundle\:
+    resource: '../../../'
+    exclude: '../../../{Entity,DependencyInjection,Resources,Sonata,*Bundle.php}'
+    autowire: true
+    autoconfigure: true
+    public: false

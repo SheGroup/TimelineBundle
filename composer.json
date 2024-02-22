@@ -1,0 +1,22 @@
+{
+  "name": "damecode/timelinebundle",
+  "description": "Bundle for entity timelines",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Damecode",
+      "email": "info@damecode.com"
+    }
+  ],
+  "require": {
+    "doctrine/doctrine-bundle": "^2.11",
+    "symfony/framework-bundle": "7.0.*",
+    "doctrine/orm": "^2.17"
+  },
+  "autoload": {
+    "psr-4": {
+      "Damecode\\TimelineBundle\\": "src/"
+    }
+  }
+}
