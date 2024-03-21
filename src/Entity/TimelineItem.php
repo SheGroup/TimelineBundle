@@ -24,6 +24,9 @@ abstract class TimelineItem
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $description = null;
 
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $createdBy = null;
+
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
 
@@ -93,5 +96,13 @@ abstract class TimelineItem
     public function removeTimeline(Timeline $timeline): void
     {
         $this->timelines->removeElement($timeline);
+    }
+    public  function getCreatedBy(): ?string
+    {
+        return $this->createdBy;
+    }
+    public  function setCreatedBy(?string $createdBy): void
+    {
+        $this->createdBy = $createdBy;
     }
 }
