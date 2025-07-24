@@ -11,7 +11,7 @@
   ],
   "require": {
     "doctrine/doctrine-bundle": "^2.11",
-    "symfony/framework-bundle": "7.0.*",
+    "symfony/framework-bundle": "7.*",
     "doctrine/orm": "^2.17"
   },
   "autoload": {
